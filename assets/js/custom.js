@@ -38,20 +38,24 @@ interval: 2000 //TIME IN MILLI SECONDS
 });
 
 
+
 /*====================================
 VAGAS SLIDESHOW SCRIPTS
 ======================================*/
-$.vegas('slideshow', {
+/*$.vegas('slideshow', {
 backgrounds: [
 	
 	{ src: 'assets/img/bg.gif', fade: 1000, delay: 9000 },
 
 	
 ]
-})('overlay', {
+})('overlay', {*/
 /** SLIDESHOW OVERLAY IMAGE **/
-src: 'assets/js/vegas/overlays/03.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
+/*src: 'assets/js/vegas/overlays/03.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
 });
+
+*/
+
 
 
 /*====================================
@@ -72,6 +76,18 @@ type: 'inside'
 FILTER FUNCTIONALITY SCRIPTS
 ======================================*/
 $(window).load(function () {
+
+
+var images = ['bg.gif', 'bg2.gif', 'bg5.gif', 'bg6.gif'];
+$('body').css({'background': 'url(assets/img/' + images[Math.floor(Math.random() *  images.length)] + ') no-repeat center  center fixed' });
+
+$('body').css({'-webkit-background-size': 'cover'});
+$('body').css({'-moz-background-size': 'cover'});
+$('body').css({'background-size': 'cover'});
+$('body').css({'-o-background-siz': 'cover'});
+
+
+
 var $container = $('#work-div');
 $container.isotope({
 filter: '*',
@@ -103,7 +119,6 @@ return false;
 /*====================================
 WRITE YOUR CUSTOM SCRIPTS BELOW
 ======================================*/
-
 
 
 
