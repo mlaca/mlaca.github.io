@@ -46,10 +46,10 @@ $.vegas('slideshow', {
 backgrounds: [
 	
 
-/*	{ src: 'assets/img/bg.gif', fade: 1000, delay: 10000 },
-	{ src: 'assets/img/bg2.gif', fade: 1000, delay: 10000 },*/
+	{ src: 'assets/img/bg.gif', fade: 1000, delay: 10000 },
+	{ src: 'assets/img/bg2.gif', fade: 1000, delay: 10000 },
 		{ src: 'assets/img/bg5.gif', fade: 1000, delay: 10000 },
-	/*	{ src: 'assets/img/bg6.gif', fade: 1000, delay: 10000 }*/
+		{ src: 'assets/img/bg6.gif', fade: 1000, delay: 10000 }
 	
 ]
 })('overlay', {
