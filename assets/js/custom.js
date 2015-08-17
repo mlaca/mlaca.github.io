@@ -42,19 +42,20 @@ interval: 2000 //TIME IN MILLI SECONDS
 /*====================================
 VAGAS SLIDESHOW SCRIPTS
 ======================================*/
+
 $.vegas('slideshow', {
 backgrounds: [
 	
 
-/*	{ src: 'assets/img/bg.gif', fade: 1000, delay: 10000 },
-	{ src: 'assets/img/bg2.gif', fade: 1000, delay: 10000 },*/
+	{ src: 'assets/img/bg.gif', fade: 1000, delay: 10000 },
+	{ src: 'assets/img/bg2.gif', fade: 1000, delay: 10000 },
 		{ src: 'assets/img/bg5.gif', fade: 1000, delay: 10000 },
-	/*	{ src: 'assets/img/bg6.gif', fade: 1000, delay: 10000 }*/
+		{ src: 'assets/img/bg6.gif', fade: 1000, delay: 10000 }
 	
 ]
 })('overlay', {
-/** SLIDESHOW OVERLAY IMAGE **/
-src: 'assets/js/vegas/overlays/03.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
+
+src: 'assets/js/vegas/overlays/00.png' // SLIDESHOW OVERLAY IMAGE, THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
 });
 
 

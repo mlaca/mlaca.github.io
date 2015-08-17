@@ -43,11 +43,13 @@ bg  bg2  bg5 bg6
 }
 
 .overlay {
-
 background: url(../js/vegas/overlays/03.png)  ;
 
-
 }
+
+
+
+
 
 section {
 padding-top: 40px;
@@ -97,7 +99,7 @@ text-decoration: none;
 color: #fff;
 }
 
-.btn-custom-two {
+.btn-custom-two, .btn-custom-three {
 color: #fff;
 background-color: rgb(137, 136, 24);
 border: 2px solid rgb(137, 136, 24);
@@ -110,12 +112,14 @@ color: #fff;
 background-color: transparent;
 }
 
-
+.btn-custom-three:hover {
+color: #fff;
+}
 /* =============================================================
 MENU SECTION STYLES
 ============================================================ */
 .navbar-inverse {
-background-color: rgba(0, 0, 0, 0.4);
+background-color: rgba(0, 0, 0, 0.6);
 border-color: transparent;
 }
 
@@ -124,16 +128,22 @@ background-color: transparent;
 border-bottom: 1px solid rgb(137, 136, 24);
 }
 
+
+
+
 .navbar-inverse .navbar-nav > li > a {
 font-size: 12px;
 font-weight: 800;
 padding: 5px 0px;
 letter-spacing: 2px;
 margin: 10px 20px 10px 20px;
-color: #FFF;
+color: rgb(200, 200, 60);
+
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+
+/*color: rgb(200, 200, 60);*/
 color: #fff;
 font-weight: 900;
 font-family: 'Oswald', sans-serif;
@@ -188,19 +198,19 @@ SERVICES SECTION STYLES
 ============================================================ */
 
 #services .services-wrapper {
-padding: 20px;
+padding: 10px;
 border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 margin-bottom: 40px;
-background-color: rgba(255, 255, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.1);
 cursor: pointer;
 
-text-shadow: 1px 1px 1px rgba(50, 50, 50, 1);
+text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
 
--webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.05);
+-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.05);
+box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.05);
 
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -209,18 +219,25 @@ transition: all 0.5s ease-in-out;
 }
 
 #services .services-wrapper:hover {
-background-color: rgba(255, 255, 255, 0.20);
+background-color: rgba(0, 0, 0, 0.1);
+/*-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         2px 2px 3px 0px rgba(0, 0, 0, 0.75);*/
 }
 
 #services h3 {
 font-family: 'Oswald', sans-serif;
-text-shadow: 1px 1px 2px rgba(50, 50, 50, 1);
+font-size: 24px;
+/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);*/
 }
 
 #services .services-wrapper i {
 margin: 5px;
+margin-right:10px;
+padding-bottom: 80px;
+float: left;
 color: rgb(137, 136, 24);
-font-size: 60px;
+font-size: 36px;
 
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -386,6 +403,8 @@ max-width: 450px;
 margin-left: auto;
 margin-right: auto;
 
+text-shadow: 1px 1px 2px rgba(50, 50, 50, 1);
+
 }
 /*.team-wrapper:hover {
 -webkit-transform: scale(1.1);
@@ -436,16 +455,25 @@ background-color: rgb(137, 136, 24);
 }
 
 
+.carousel-inner {
+
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+-moz-box-shadow:    0 0 5px rgba(0, 0, 0, .5);
+box-shadow:         0 0 5px rgba(0, 0, 0, .5);
+
+background-color: rgba(255, 255, 255, 0.1);
+}
+
 .team-wrapper .description {
 padding: 30px 20px 20px;
-background-color: rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.1);
 text-align: center;
-border-bottom: 1px solid #fff;
+/*border-bottom: 1px solid #fff;
 border-right: 1px solid #fff;
 border-left: 1px solid #fff;
 border-radius: 5px;
 -moz-border-radius: 5px;
--webkit-border-radius: 5px;
+-webkit-border-radius: 5px;*/
 }
 
 .team-wrapper .description h5 {
@@ -487,5 +515,88 @@ text-decoration:none;
 
 /* javítások */
 .col-sm-4 {
-  height: 260px;
+/*  height: 260px;*/
+}
+
+
+/* isotope 4 hasáb hiba */
+.col-lg-3 {
+    margin-right: -1px;
+}
+
+
+.pull-right .btn {
+ position: fixed;
+right: -150px;
+height:34px;
+text-align: left;
+font-size: 13px;
+
+  }
+
+
+.pull-left .btn {
+position: fixed;
+left: -150px;
+height:34px;
+text-align: right;
+font-size: 13px;
+}
+
+
+.pull-right .btn i {
+padding-right: 10px;
+}
+
+.pull-left .btn i {
+padding-left: 10px;
+}
+
+
+
+.pull-right .first, .pull-left .first {
+top:80px;
+}
+
+.pull-right .second , .pull-left .second{
+top:116px;
+}
+
+.pull-right .third , .pull-left .third{
+top:152px;
+}
+
+.pull-right .fourth, .pull-left .fourth {
+top:188px;
+}
+
+.pull-right a {
+
+ float: right;
+width:180px;
+  -webkit-transition-property: right,border-radius,background-color!important;
+  transition-property: right,border-radius,background-color!important;
+  -webkit-transition-duration: 200ms!important;
+  transition-duration: 200ms!important;
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955)!important;
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955)!important
+}
+
+.pull-left a {
+
+width:180px;
+  -webkit-transition-property: left,border-radius,background-color!important;
+  transition-property: left,border-radius,background-color!important;
+  -webkit-transition-duration: 200ms!important;
+  transition-duration: 200ms!important;
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955)!important;
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955)!important
+}
+
+.pull-right a:hover {
+right: -20px;
+}
+
+.pull-left a:hover {
+left: -20px;
 }
